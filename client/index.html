@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Cliente Servicio C#</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+	<nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0">Cliente PHP Productos</a>
+    <ul class="navbar-nav px-3">
+      	<li class="nav-item text-nowrap"></li>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6">
+    		<div class="card">
+      		<div class="card-body">
+      			<h5 class="card-title">Registrar Nuevo Usuario</h5>
+      			<p class="card-text">Método que registra un nuevo usuario.</p>
+      			<button type="button" class="btn btn-lg btn-primary btn-block" data-toggle="modal" data-target="#modalForm" id="registerUser" onclick="modificaModal(1)">Ir al formulario</button>
+      		</div>
+    		</div>
+    	</div>
+    	<div class="col-sm-6">
+    		<div class="card">
+      		<div class="card-body">
+      			<h5 class="card-title">Registrar Información General del Usuario</h5>
+      			<p class="card-text">Registra los datos personales del usuario.</p>
+      			<button type="button" class="btn btn-lg btn-primary btn-block" data-toggle="modal" data-target="#modalForm" id="registerInfo" onclick="modificaModal(2)">Ir al formulario</button>
+      		</div>
+    		</div>
+    	</div>
+    	<div class="col-sm-6">
+    		<div class="card">
+      		<div class="card-body">
+      			<h5 class="card-title">Actualizar Usuario y Contraseña</h5>
+      			<p class="card-text">Actualiza un usuario y una contraseña ya existente.</p>
+      			<button type="button" class="btn btn-lg btn-primary btn-block" data-toggle="modal" data-target="#modalForm" id="updateUser" onclick="modificaModal(3)">Ir al formulario</button>
+      		</div>
+    		</div>
+    	</div>
+    	<div class="col-sm-6">
+    		<div class="card">
+      		<div class="card-body">
+      			<h5 class="card-title">Actualizar Información del Usuario</h5>
+      			<p class="card-text">Actualiza la información de un usuario ya existente.</p>
+      			<button type="button" class="btn btn-lg btn-primary btn-block" data-toggle="modal" data-target="#modalForm" id="updateInfo" onclick="modificaModal(4)">Ir al formulario</button>
+      		</div>
+    		</div>
+    	</div>
+		</div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalForm" tabindex="-1" role="dialog">
+  		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        	<div class="modal-content">
+            	<div class="modal-header">
+              		<h5 class="modal-title" id="exampleModalLabel">Formulario</h5>
+              		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  		<span aria-hidden="true">&times;</span>
+              		</button>
+            	</div>
+            	<div class="modal-body">
+              		<form class="formulario">
+                		<div class="form-group" id="camposUsuario">
+                  			<label for="labelUser" class="col-form-label">Usuario</label>
+                  			<input type="text" id="labelUser" class="form-control" name="user" required>
+                		</div>
+                		<div class="form-group" id="camposPassword">
+                  			<label for="labelPassword" class="col-form-label">Password</label>
+                  			<input type="password" id="labelPassword" class="form-control" name="pass" minlength="8" maxlength="15" required>
+                		</div>
+                		<div class="form-group" id="camposOldUser">
+                  			<label for="labelOldUser" class="col-form-label">Usuario a cambiar:</label>
+                  			<input type="text" id="labelOldUser" class="form-control" name="oldUser" required>
+                		</div>
+                		<div class="form-group" id="camposSearchedUser">
+                  			<label for="labelSearchedUser" class="col-form-label">Usuario a buscar:</label>
+                  			<input type="text" id="labelSearchedUser" class="form-control" name="searchedUser" required>
+                		</div>
+                		<div class="form-group" id="camposNewUser">
+                  			<label for="labelNewUser" class="col-form-label">Nuevo Usuario:</label>
+                  			<input type="text" id="labelNewUser" class="form-control" name="newUser" required>
+                		</div>
+                		<div class="form-group" id="camposNewPassword">
+                  			<label for="labelNewPassword" class="col-form-label">Nueva Contraseña:</label>
+                  			<input type="password" id="labelNewPassword" class="form-control" name="newPass" minlength="9" maxlength="15" required>
+                		</div>
+                		<div class="form-group" id="camposNameUser">
+                  			<label for="labelNameUser" class="col-form-label">Nombre de Usuario</label>
+                  			<input type="text" id="labelNameUser" class="form-control" name="nameUser" required>
+                		</div>
+                		<div class="form-group" id="camposEmailUser">
+                  			<label for="labelEmailUser" class="col-form-label">Correo Electrónico:</label>
+                  			<input type="email" id="labelEmailUser" class="form-control" name="emailUser" required>
+                		</div>
+                		<div class="form-group" id="camposRolUser">
+                  			<label for="rolSelect">Rol</label>
+                  			<select class="form-control" id="rolSelect" name="rol">
+                    			<option value="ventas">Ventas</option>
+                    			<option value="rh">Recursos Humanos</option>
+                    			<option value="almacen">Almacén</option>
+                  			</select>
+                		</div>
+                		<div class="form-group" id="camposTelefonoUser">
+                  			<label for="labelTelefonoUser" class="col-form-label">Telefono:</label>
+                  			<input type="text" id="labelTelefonoUser" class="form-control" name="telefonoUser" maxlength="10" required>
+                		</div>
+              		</form>
+              		<!--<div id="alert"></div>-->
+            	</div>
+            	<div class="modal-footer">
+              		<button type="button" class="btn btn-danger" data-dismiss="modal" id="cancelar">Cancelar</button>
+              		<button type="button" class="btn btn-success" id="operacion">Registrar</button>
+            	</div>
+        	</div>
+      	</div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript">
+      $("#cancelar").click(function(event) {
+        $(".formulario")[0].reset();
+        $("#alerta").remove();
+      });
+
+      $(".close").click(function(event) {
+          $(".formulario")[0].reset();
+          $("#alerta").remove();
+      });
+  </script>
+</body>
+</html>

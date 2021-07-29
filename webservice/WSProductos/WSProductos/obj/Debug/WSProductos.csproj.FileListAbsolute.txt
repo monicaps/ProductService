@@ -1,0 +1,16 @@
+C:\Users\Monica Portillo\source\repos\WSProductos\WSProductos\bin\WSProductos.dll.config
+C:\Users\Monica Portillo\source\repos\WSProductos\WSProductos\bin\WSProductos.dll
+C:\Users\Monica Portillo\source\repos\WSProductos\WSProductos\bin\WSProductos.pdb
+C:\Users\Monica Portillo\source\repos\WSProductos\WSProductos\bin\FireSharp.dll
+C:\Users\Monica Portillo\source\repos\WSProductos\WSProductos\bin\FireSharp.Serialization.JsonNet.dll
+C:\Users\Monica Portillo\source\repos\WSProductos\WSProductos\bin\Newtonsoft.Json.dll
+C:\Users\Monica Portillo\source\repos\WSProductos\WSProductos\bin\Newtonsoft.Json.Schema.dll
+C:\Users\Monica Portillo\source\repos\WSProductos\WSProductos\bin\RestSharp.dll
+C:\Users\Monica Portillo\source\repos\WSProductos\WSProductos\bin\Newtonsoft.Json.xml
+C:\Users\Monica Portillo\source\repos\WSProductos\WSProductos\bin\Newtonsoft.Json.Schema.xml
+C:\Users\Monica Portillo\source\repos\WSProductos\WSProductos\bin\RestSharp.xml
+C:\Users\Monica Portillo\source\repos\WSProductos\WSProductos\obj\Debug\WSProductos.csprojAssemblyReference.cache
+C:\Users\Monica Portillo\source\repos\WSProductos\WSProductos\obj\Debug\WSProductos.csproj.CoreCompileInputs.cache
+C:\Users\Monica Portillo\source\repos\WSProductos\WSProductos\obj\Debug\WSProductos.csproj.CopyComplete
+C:\Users\Monica Portillo\source\repos\WSProductos\WSProductos\obj\Debug\WSProductos.dll
+C:\Users\Monica Portillo\source\repos\WSProductos\WSProductos\obj\Debug\WSProductos.pdb
